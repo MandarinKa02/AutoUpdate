@@ -4,18 +4,18 @@ FileInstall, C:\Users\Administrator\Desktop\Binder\CreateProfileMenu.jpg, %A_Wor
 MainMenu:
 Gui, Add, Picture, x0 y0 h400 w360, %A_ScriptDir%\MainMenu.jpg
 
-;=================Коробочка
+;=================ГЉГ®Г°Г®ГЎГ®Г·ГЄГ 
 Gui, Add, GroupBox, x58 y35 h300 w246
 
 
 Gui, Font, S8 C4169E1, Obelix Pro
-Gui, Add, Text, x125 y25 +BackGroundTrans, Главное меню
+Gui, Add, Text, x125 y25 +BackGroundTrans, ГѓГ«Г ГўГ­Г®ГҐ Г¬ГҐГ­Гѕ
 
 Gui, Font, S7 C4169E1, Obelix Pro
-Gui, Add, Text, x75 y53 +BackGroundTrans, Управление биндером:
+Gui, Add, Text, x75 y53 +BackGroundTrans, Г“ГЇГ°Г ГўГ«ГҐГ­ГЁГҐ ГЎГЁГ­Г¤ГҐГ°Г®Г¬:
 
 Gui, Font, S7 C00FFFF, Obelix Pro
-Gui, Add, Button, x64 y65 h25 w100 +BackGroundTrans gMainMenuStart, Запустить
+Gui, Add, Button, x64 y65 h25 w100 +BackGroundTrans gMainMenuStart, Г‡Г ГЇГіГ±ГІГЁГІГј
 
 Gui, Font, S8 CBlack
 Gui, Add, Text, x64 y82 +BackGroundTrans, .
@@ -32,31 +32,30 @@ Gui, Add, Text, x160 y112 +BackGroundTrans, .
 Gui, Add, Text, x160 y117 +BackGroundTrans, .
 
 Gui, Font, S5 CE32636, Obelix Pro
-Gui, Add, Button, x-1 y386 h15 w125 +BackGroundTrans gMainMenuErrorSpeak, Сообщить об ошибке
-Gui, Add, Button, x156 y388 h12 w85 +BackGroundTrans gDeleteInformation, Сбросить все
+Gui, Add, Button, x-1 y386 h15 w125 +BackGroundTrans gMainMenuErrorSpeak, Г‘Г®Г®ГЎГ№ГЁГІГј Г®ГЎ Г®ГёГЁГЎГЄГҐ
+Gui, Add, Button, x156 y388 h12 w85 +BackGroundTrans gDeleteInformation, Г‘ГЎГ°Г®Г±ГЁГІГј ГўГ±ГҐ
 
 Gui, Font, S7 C00FFFF, Obelix Pro
-Gui, Add, Button, x64 y125 h25 w100 +BackGroundTrans gMainMenuDelete, Удалить
+Gui, Add, Button, x64 y125 h25 w100 +BackGroundTrans gMainMenuDelete, Г“Г¤Г Г«ГЁГІГј
 
 
 Gui, Font, S7 C00FFFF, Obelix Pro
-Gui, Add, Button, x184 y300 h25 w100 +BackGroundTrans gMainMenuCreators, Создатели
+Gui, Add, Button, x184 y300 h25 w100 +BackGroundTrans gMainMenuCreators, Г‘Г®Г§Г¤Г ГІГҐГ«ГЁ
 
 Gui, Font, S7 C00FFFF, Obelix Pro
-Gui, Add, Button, x64 y300 h25 w100 +BackGroundTrans gMainMenuUpdate, Обновить
+Gui, Add, Button, x64 y300 h25 w100 +BackGroundTrans gMainMenuUpdate, ГЋГЎГ­Г®ГўГЁГІГј
 
 Gui, Font, S7 C00FFFF, Obelix Pro
-Gui, Add, Text, x115 y340 +BackGroundTrans, Управление профилем
+Gui, Add, Text, x115 y340 +BackGroundTrans, Г“ГЇГ°Г ГўГ«ГҐГ­ГЁГҐ ГЇГ°Г®ГґГЁГ«ГҐГ¬
 
 Gui, Font, S6 Cblack, Obelix Pro
-Gui, Add, Button, x65 y355 h25 w100 +BackGroundTrans gMainMenuCreate, Создать
-Gui, Add, Button, x190 y355 h25 w100 +BackGroundTrans gMainMenuLoad, Загрузить
+Gui, Add, Button, x65 y355 h25 w100 +BackGroundTrans gMainMenuCreate, Г‘Г®Г§Г¤Г ГІГј
+Gui, Add, Button, x190 y355 h25 w100 +BackGroundTrans gMainMenuLoad, Г‡Г ГЈГ°ГіГ§ГЁГІГј
 
 ;===================================Version========================================================================
 Gui, Font, S6 C00FFFF, Obelix Pro
 Gui, Add, Text, x315 y390 +BackGroundTrans, Ver.[2.7]
 ;==================================================================================================================
-
 Gui, Show, x508 y234 h400 w360, GTA:SA:MP Script By MandarinKa
 
 Goto, LoadSettingsFile
@@ -91,14 +90,14 @@ MainMenuStart:
 Return
 
 MainMenuErrorSpeak:
-MsgBox, Напишите мне в скайп: vetos45.ru
+MsgBox, ГЌГ ГЇГЁГёГЁГІГҐ Г¬Г­ГҐ Гў Г±ГЄГ Г©ГЇ: vetos45.ru
 Return
 
 DeleteInformation:
 FileDelete, %A_WorkingDir%\*.ini
 FileDelete, %A_WorkingDir%\*.profile
 SetTimer, DeleteInformation2, 3000
-MsgBox, 48, Рестарт ,Сейчас произойдет рестарт.
+MsgBox, 48, ГђГҐГ±ГІГ Г°ГІ ,Г‘ГҐГ©Г·Г Г± ГЇГ°Г®ГЁГ§Г®Г©Г¤ГҐГІ Г°ГҐГ±ГІГ Г°ГІ.
 Return
 
 DeleteInformation2:
@@ -106,15 +105,15 @@ Reload
 Return
 
 MainMenuDelete:
-MsgBox, Самоуничтожение не доступно.
+MsgBox, Г‘Г Г¬Г®ГіГ­ГЁГ·ГІГ®Г¦ГҐГ­ГЁГҐ Г­ГҐ Г¤Г®Г±ГІГіГЇГ­Г®.
 Return
 
 MainMenuCreators:
-MsgBox, Гл. Создатель Antonio_Stivenson. Список будет дополняться.
+MsgBox, ГѓГ«. Г‘Г®Г§Г¤Г ГІГҐГ«Гј Antonio_Stivenson. Г‘ГЇГЁГ±Г®ГЄ ГЎГіГ¤ГҐГІ Г¤Г®ГЇГ®Г«Г­ГїГІГјГ±Гї.
 Return
 
 MainMenuUpdate:
-MsgBox, Система автообновления в тестировании и пока что не доступна.
+MsgBox, Г‘ГЁГ±ГІГҐГ¬Г  Г ГўГІГ®Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї Гў ГІГҐГ±ГІГЁГ°Г®ГўГ Г­ГЁГЁ ГЁ ГЇГ®ГЄГ  Г·ГІГ® Г­ГҐ Г¤Г®Г±ГІГіГЇГ­Г .
 Return
 
 MainMenuCreate:
@@ -125,7 +124,7 @@ Return
 MainMenuLoad:
 if CountNickNames=0
 {
-	MsgBox, У вас нет профилей. Так чего же ждать? Создайте его!
+	MsgBox, Г“ ГўГ Г± Г­ГҐГІ ГЇГ°Г®ГґГЁГ«ГҐГ©. Г’Г ГЄ Г·ГҐГЈГ® Г¦ГҐ Г¦Г¤Г ГІГј? Г‘Г®Г§Г¤Г Г©ГІГҐ ГҐГЈГ®!
 	Return
 }
 else
@@ -134,11 +133,11 @@ else
 	if MainMenuLoadCount=1
 	{
 		NickName=%NickNameOutputVar%
-		MsgBox, Профиль %NickNameOutputVar%. Успешно загружен
+		MsgBox, ГЏГ°Г®ГґГЁГ«Гј %NickNameOutputVar%. Г“Г±ГЇГҐГёГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­
 	}
 	else
 	{
-		MsgBox, Профиль %NickNameOutputVar%. Уже был загружен.
+		MsgBox, ГЏГ°Г®ГґГЁГ«Гј %NickNameOutputVar%. Г“Г¦ГҐ ГЎГ»Г« Г§Г ГЈГ°ГіГ¦ГҐГ­.
 	}
 }
 Return
@@ -152,46 +151,46 @@ CreateProfileMenu:
 Gui, Add, Picture, x-70 y0 h380 w480, %A_ScriptDir%\CreateProfileMenu.jpg
 
 Gui, Font, S8 CFFFAF0, Obelix Pro
-Gui, Add, Text, x110 y25 +BackGroundTrans, Задайте параметры:
+Gui, Add, Text, x110 y25 +BackGroundTrans, Г‡Г Г¤Г Г©ГІГҐ ГЇГ Г°Г Г¬ГҐГІГ°Г»:
 
-;=================Коробочка
+;=================ГЉГ®Г°Г®ГЎГ®Г·ГЄГ 
 Gui, Add, GroupBox, x58 y35 h300 w246
 
 
 
 Gui, Font, S6 CFFFAF0, COPPERPLATE
-Gui, Add, Text, x68 y50 +BackGroundTrans, Выберите ваш профиль:
-Gui, Add, Text, x68 y90 +BackGroundTrans, Выберите ваш пол:
-Gui, Add, Text, x68 y130 +BackGroundTrans, Выберите вашу организацию(легальные):
-Gui, Add, Text, x68 y170 +BackGroundTrans, Выберите ваш сервер:
-Gui, Add, Text, x68 y210 +BackGroundTrans, Сколько лет вы в штате:
+Gui, Add, Text, x68 y50 +BackGroundTrans, Г‚Г»ГЎГҐГ°ГЁГІГҐ ГўГ Гё ГЇГ°Г®ГґГЁГ«Гј:
+Gui, Add, Text, x68 y90 +BackGroundTrans, Г‚Г»ГЎГҐГ°ГЁГІГҐ ГўГ Гё ГЇГ®Г«:
+Gui, Add, Text, x68 y130 +BackGroundTrans, Г‚Г»ГЎГҐГ°ГЁГІГҐ ГўГ ГёГі Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГѕ(Г«ГҐГЈГ Г«ГјГ­Г»ГҐ):
+Gui, Add, Text, x68 y170 +BackGroundTrans, Г‚Г»ГЎГҐГ°ГЁГІГҐ ГўГ Гё Г±ГҐГ°ГўГҐГ°:
+Gui, Add, Text, x68 y210 +BackGroundTrans, Г‘ГЄГ®Г«ГјГЄГ® Г«ГҐГІ ГўГ» Гў ГёГІГ ГІГҐ:
 
-SexChoice =Мужской
-OrgChoice =Гражданка
+SexChoice =ГЊГіГ¦Г±ГЄГ®Г©
+OrgChoice =ГѓГ°Г Г¦Г¤Г Г­ГЄГ 
 ServerChoice =Red
 
 if CountNickNames =0
 {
-	NickNameList =Новый профиль
+	NickNameList =ГЌГ®ГўГ»Г© ГЇГ°Г®ГґГЁГ«Гј
 	Gui, Font, S6 Cblue, Obelix Pro
-	Gui, Add, DropDownList, x68 y65 w155 vNickNameList +BackGroundTrans, Новый профиль||
+	Gui, Add, DropDownList, x68 y65 w155 vNickNameList +BackGroundTrans, ГЌГ®ГўГ»Г© ГЇГ°Г®ГґГЁГ«Гј||
 	Gui, Font, S6 CFFFAF0, COPPERPLATE
 	Gui, Add, Text, x175 y7 +BackGroundTrans, NickName:
 	Gui, Font, S6 Cblack, Obelix Pro
 	Gui, Add, Edit, x230 y5 h20 w130 Limit30 vNickNameWrite,
-	Gui, Add, Button, x130 y345 h25 w100 gCreateProfileMenuSave, Сохранить
+	Gui, Add, Button, x130 y345 h25 w100 gCreateProfileMenuSave, Г‘Г®ГµГ°Г Г­ГЁГІГј
 }
 if CountNickNames =1
 {
 	Gui, Font, S6 Cblue, Obelix Pro
 	Gui, Add, DropDownList, x68 y65 w155 vNickNameList +BackGroundTrans, %NickNameOutputVar%||
-	Gui, Add, Button, x130 y345 h25 w100 gCreateProfileMenuSave, Изменить
+	Gui, Add, Button, x130 y345 h25 w100 gCreateProfileMenuSave, Г€Г§Г¬ГҐГ­ГЁГІГј
 }
 
 Gui, Font, S6, Obelix Pro
 
-Gui, Add, DropDownList, x68 y105 w155 vSexChoice +BackGroundTrans, Мужской||Женский
-Gui, Add, DropDownList, x68 y145 w155 vOrgChoice +BackGroundTrans, Гражданка||Министертсво Обороны|Министертсво Внутрених Дел|Министертсво Здравоохранения|Правительство
+Gui, Add, DropDownList, x68 y105 w155 vSexChoice +BackGroundTrans, ГЊГіГ¦Г±ГЄГ®Г©||Г†ГҐГ­Г±ГЄГЁГ©
+Gui, Add, DropDownList, x68 y145 w155 vOrgChoice +BackGroundTrans, ГѓГ°Г Г¦Г¤Г Г­ГЄГ ||ГЊГЁГ­ГЁГ±ГІГҐГ°ГІГ±ГўГ® ГЋГЎГ®Г°Г®Г­Г»|ГЊГЁГ­ГЁГ±ГІГҐГ°ГІГ±ГўГ® Г‚Г­ГіГІГ°ГҐГ­ГЁГµ Г„ГҐГ«|ГЊГЁГ­ГЁГ±ГІГҐГ°ГІГ±ГўГ® Г‡Г¤Г°Г ГўГ®Г®ГµГ°Г Г­ГҐГ­ГЁГї|ГЏГ°Г ГўГЁГІГҐГ«ГјГ±ГІГўГ®
 Gui, Add, DropDownList, x68 y185 w155 vServerChoice +BackGroundTrans, Red||Green|Yellow|Orange|Blue|White|Silver|Purple|Chocolate
 Gui, Add, Edit, x195 y206 w20 Limit3 vLvl
 ;===================================Version========================================================================
@@ -213,41 +212,41 @@ GuiControlGet, ServerChoice
 GuiControlGet, Lvl
 if NickNameList =
 {
-	MsgBox, Вы выбрали NickName?
+	MsgBox, Г‚Г» ГўГ»ГЎГ°Г Г«ГЁ NickName?
 	Return
 }
-if NickNameList =Новый профиль
+if NickNameList =ГЌГ®ГўГ»Г© ГЇГ°Г®ГґГЁГ«Гј
 {
 	GuiControlGet, NickNameWrite
 	if NickNameWrite =
 	{
-		MsgBox, Вы ввели новый NickName?
+		MsgBox, Г‚Г» ГўГўГҐГ«ГЁ Г­Г®ГўГ»Г© NickName?
 		Return
 	}
 }
 if SexChoice =
 {
-	MsgBox, Вы мужчина или женщина?
+	MsgBox, Г‚Г» Г¬ГіГ¦Г·ГЁГ­Г  ГЁГ«ГЁ Г¦ГҐГ­Г№ГЁГ­Г ?
 	Return
 }
 if OrgChoice =
 {
-	MsgBox, В какой вы организации?
+	MsgBox, Г‚ ГЄГ ГЄГ®Г© ГўГ» Г®Г°ГЈГ Г­ГЁГ§Г Г¶ГЁГЁ?
 	Return
 }
 if ServerChoice =
 {
-	MsgBox, На каком сервере вы играете?
+	MsgBox, ГЌГ  ГЄГ ГЄГ®Г¬ Г±ГҐГ°ГўГҐГ°ГҐ ГўГ» ГЁГЈГ°Г ГҐГІГҐ?
 	Return
 }
 if Lvl =
 {
-	MsgBox, Сколько лет вы в штате?
+	MsgBox, Г‘ГЄГ®Г«ГјГЄГ® Г«ГҐГІ ГўГ» Гў ГёГІГ ГІГҐ?
 	Return
 }
 
-;============После трудной проверки пишем всё в Settings
-if NickNameList =Новый профиль
+;============ГЏГ®Г±Г«ГҐ ГІГ°ГіГ¤Г­Г®Г© ГЇГ°Г®ГўГҐГ°ГЄГЁ ГЇГЁГёГҐГ¬ ГўГ±Вё Гў Settings
+if NickNameList =ГЌГ®ГўГ»Г© ГЇГ°Г®ГґГЁГ«Гј
 {
 	CountNickNames = %CountNickNames%
 	CountNickNames++
