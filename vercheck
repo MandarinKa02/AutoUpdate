@@ -1,5 +1,5 @@
-[UPD]
-v=2.7
-build=2.7
-des=Бета-Тестирование
-upd=Бета-Тестирование
+[versioninfo]
+latestVersion=2.6
+currentVersion=2.7
+downloadURL=
+autoUpdate=0
