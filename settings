@@ -1,5 +1,5 @@
-[pack]
+[build]
 1=1
 2=1
 [global]
-pack=1
+build=1
